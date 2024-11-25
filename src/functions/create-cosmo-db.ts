@@ -13,7 +13,7 @@ export async function createCosmoDB(
 
   const name = request.query.get('name') || (await request.text()) || 'world'
 
-  return { body: `Hello, ${name}!` }
+  return { body: `Hello,  ${name}!, this is a deployed function` }
 }
 
 app.http('create-cosmo-db', {
